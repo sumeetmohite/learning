@@ -4,6 +4,7 @@
 }
 body {
   background-color: #eeeeee;
+  font-family: 'Quicksand', sans-serif;
 }
 .navbar {
   height: 60px;
@@ -33,15 +34,22 @@ body {
   text-align: center;
 }
 input {
-  font-size: 1rem;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
 }
 #type_of_school {
   margin: 1.5rem 0;
 }
+#type_of_school input {
+  cursor: pointer;
+}
+
 .forgot {
   margin-left: auto;
   text-decoration: none;
-  color: green;
+  color: #1f7a54;
+  font-size: 14px;
+  font-weight: 500;
 }
 .selector {
   cursor: pointer;
@@ -52,14 +60,24 @@ input {
   background-color: white;
   border-bottom: 1px solid lightgray;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+  outline: none;
 }
 #email,
 #password {
   margin-top: 1.5rem;
   border: none;
+  font-size: 16px;
+  color: #666666;
   border-bottom: 1px solid lightgray;
 }
+input {
+  outline: none;
+}
+
 #submit-btn {
   margin-bottom: 1.5rem;
   margin: 1.5rem auto;
@@ -73,9 +91,12 @@ input {
 }
 
 .footer {
-  text-align: center;
+  width: 100vw;
   color: green;
-  
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .fa-lightbulb-o {
   font-size: 48px;

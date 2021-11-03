@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login_styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Quantum</title>
 </head>
@@ -16,12 +19,16 @@
     <form action="" id="form">
       <h2 id="heading">Log in with Quantum</h2>
       <div id="type_of_school">
-        <input class="selector" type="radio" name="type_of_school" value="district">
-        <label for="district">District</label>
-        <input class="selector" type="radio" name="type_of_school" value="independent_school">
-        <label for="independent_school">Independent School</label>
+        <label class="school-type" for="district">
+          <input type="radio" name="radio" checked="checked" value="district">
+          <span class="checkmark"></span>District
+        </label>
+        <label class="school-type" for="independent_school">
+          <input type="radio" name="radio" value="independent_school">
+          <span class="checkmark"></span>Independent school
+        </label>
       </div>
-      <label for="state">State<sup>*</sup></label>
+      <label for="state" style="font-size:12px">State<sup>*</sup></label>
       <select class="selector" name="state" id="state">
         <option value="Alabama">Alabama</option>
         <option value="Alaska">Alaska</option>
@@ -34,15 +41,16 @@
         <option value="Florida">Florida</option>
         <option value="Georgia">Georgia</option>
       </select>
-      <label for="district">District<sup>*</sup></label>
+      <label for="district" style="font-size:12px">District<sup>*</sup></label>
       <select class="selector" name="district" id="district">
         <option value="alabama-school-district">Alabama School District</option>
       </select>
       <input type="text" id="email" placeholder="Username/Email ID*">
       <a class="forgot" href="/">FORGOT USERNAME?</a><br />
       <input type="password" id="password" placeholder="Password*">
+      <i class="fa fa-eye" aria-hidden="true"></i>
       <a class="forgot" href="/">FORGOT PASSWORD?</a><br />
-      <div><input type="checkbox" class="selector"> Remember Me</div>
+      <div style="font-weight: 500"><input type="checkbox" class="selector"> Remember Me</div>
       <button class="selector" type="submit" id="submit-btn">LOG IN</button>
     </form>
   </div>
