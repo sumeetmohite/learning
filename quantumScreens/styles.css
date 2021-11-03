@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eeeeee;
+}
+.navbar {
+  height: 60px;
+  background-color: #202b37;
+  padding: 0 2rem;
+  border-bottom: 2px solid #31b9e4;
+  display: flex;
+  align-items: center;
+}
+.title {
+  text-decoration: none;
+  color: white;
+  font-size: 1.75rem;
+}
+.form-container {
+  margin: 60px auto;
+  background-color: #ffffff;
+  border-top: 5px solid #3ac7ec;
+  border-radius: 3px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+#heading {
+  text-align: center;
+}
+input {
+  font-size: 1rem;
+}
+#type_of_school {
+  margin: 1.5rem 0;
+}
+.forgot {
+  margin-left: auto;
+  text-decoration: none;
+  color: green;
+}
+.selector {
+  cursor: pointer;
+}
+#district,
+#state {
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+#email,
+#password {
+  margin-top: 1.5rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+#submit-btn {
+  margin-bottom: 1.5rem;
+  margin: 1.5rem auto;
+  width: 200px;
+  height: 2rem;
+  background-color: #3fd28b;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.footer {
+  text-align: center;
+  color: green;
+  
+}
+.fa-lightbulb-o {
+  font-size: 48px;
+  color: #cfb019;
+  transform: rotate(-20deg);
+}
+
+/*Responsive*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 300px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .form-container {
+    width: 500px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}

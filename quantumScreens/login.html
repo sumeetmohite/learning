@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Quantum</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="" class="title selector"><i class="fa fa-lightbulb-o"></i> Quantum</a>
+  </div>
+  <div class="form-container">
+    <form action="" id="form">
+      <h2 id="heading">Log in with Quantum</h2>
+      <div id="type_of_school">
+        <input class="selector" type="radio" name="type_of_school" value="district">
+        <label for="district">District</label>
+        <input class="selector" type="radio" name="type_of_school" value="independent_school">
+        <label for="independent_school">Independent School</label>
+      </div>
+      <label for="state">State<sup>*</sup></label>
+      <select class="selector" name="state" id="state">
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+      </select>
+      <label for="district">District<sup>*</sup></label>
+      <select class="selector" name="district" id="district">
+        <option value="alabama-school-district">Alabama School District</option>
+      </select>
+      <input type="text" id="email" placeholder="Username/Email ID*">
+      <a class="forgot" href="/">FORGOT USERNAME?</a><br />
+      <input type="password" id="password" placeholder="Password*">
+      <a class="forgot" href="/">FORGOT PASSWORD?</a><br />
+      <div><input type="checkbox" class="selector"> Remember Me</div>
+      <button class="selector" type="submit" id="submit-btn">LOG IN</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>About | Contact Us</p>
+  </div>
+</body>
+</html>
