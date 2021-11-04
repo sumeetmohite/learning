@@ -45,11 +45,15 @@
       <select class="selector" name="district" id="district">
         <option value="alabama-school-district">Alabama School District</option>
       </select>
-      <input type="text" id="email" placeholder="Username/Email ID*">
-      <a class="forgot" href="/">FORGOT USERNAME?</a><br />
-      <input type="password" id="password" placeholder="Password*">
-      <i class="fa fa-eye" aria-hidden="true"></i>
-      <a class="forgot" href="/">FORGOT PASSWORD?</a><br />
+      <div id="login-container">
+        <input type="text" id="email" placeholder="Username/Email ID*">
+        <a class="forgot" href="/">FORGOT USERNAME?</a><br />
+        <div id="password-container">
+          <input type="password" id="password" placeholder="Password*">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <a class="forgot" href="/">FORGOT PASSWORD?</a><br />
+      </div>
       <div style="font-weight: 500"><input type="checkbox" class="selector"> Remember Me</div>
       <button class="selector" type="submit" id="submit-btn">LOG IN</button>
     </form>

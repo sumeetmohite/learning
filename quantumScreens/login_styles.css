@@ -72,10 +72,29 @@ input {
   border: none;
   font-size: 16px;
   color: #666666;
+}
+#email {
   border-bottom: 1px solid lightgray;
 }
 input {
   outline: none;
+}
+#login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#password-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+.fa-eye {
+  color: darkgreen;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 #submit-btn {
