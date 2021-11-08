@@ -30,25 +30,34 @@ body {
 .selector {
   cursor: pointer;
 }
-.nav-links {
-  display: flex;
-  color: white;
-  list-style-type: none;
+#links-container {
   height: 100%;
 }
-.nav-link {
-  margin: 0 0.6rem;
+#links-container > a {
+  display: flex;
+  color: #38a877;
+  text-decoration: none;
+  height: 100%;
+  margin: 0 10px;
   display: flex;
   align-items: center;
-  color: #38a877;
   cursor: pointer;
-  height: 100% - 3px;
-  border-bottom: 3px solid #202b37;
 }
-.nav-link:hover {
+#links-container > a:hover {
   color: white;
   border-bottom: 3px solid #ffffff;
 }
+#links-container {
+  display: flex;
+  align-items: center;
+}
+.fa-bars {
+  color: #38a877;
+}
+#hamburger {
+  display: inline-block;
+}
+
 #page-content {
   margin: 2rem;
 }
@@ -87,13 +96,15 @@ body {
 }
 #courses-container {
   display: flex;
-  border: 1px solid purple;
   flex-wrap: wrap;
   justify-content: center;
 }
 .item-card {
   background-color: white;
   margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .course-ctr {
   padding: 1rem;
@@ -105,11 +116,18 @@ body {
   object-fit: cover;
   margin-right: 14px;
 }
+.options-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.options-menu > i {
+  color: #1f7a54;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .item-card {
-    width: 100px;
+    width: 90%;
     height: 200px;
     margin: 0.5rem;
   }
@@ -117,17 +135,22 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .item-card {
+    width: 90%;
+    height: 200px;
+    margin: 0.5rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .nav-links {
-    display: none;
-  }
   .item-card {
     width: 500px;
     height: 200px;
     margin: 0.5rem;
+  }
+  #hamburger {
+    display: hidden;
   }
 }
 
@@ -141,4 +164,10 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
 }
