@@ -14,22 +14,22 @@
   <title>Dashboard</title>
 </head>
 <body>
-  <div class="navbar" id="navbar">
-    <a href="" class="title selector"><i class="fa fa-lightbulb-o"></i> Quantum</a>
-    <div id="links-container">
-      <a href="#">DASHBOARD</a>
-      <a href="#">CONTENT</a>
-      <a href="#">USERS</a>
-      <a href="#">REPORTS</a>
-      <a href="#">ADMIN</a>
-      <a href="#"><i class="fa fa-bell"></i></a>
-      <a href="#"><i class="fa fa-bullhorn"></i></a>
-      <a href="#">
-        <img
-          src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80"
-          alt="user" height="25" style="border-radius:50% ; border:2px solid #38A877 "></a>
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
+  <div class="navbar" id="myNavbar">
+    <a href="#" class="title selector active" style="color:white"><i class="fa fa-lightbulb"></i> Quantum</a>
+    <a href="#">DASHBOARD</a>
+    <a href="#">CONTENT</a>
+    <a href="#">USERS</a>
+    <a href="#">REPORTS</a>
+    <a href="#">ADMIN</a>
+    <a href="#"><i class="fa fa-bell"></i></a>
+    <a href="#"><i class="fa fa-bullhorn"></i></a>
+    <a href="#">
+      <img
+        src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80"
+        alt="user" height="25" style="border-radius:50% ; border:2px solid #38A877 "></a>
+    <a href="javascript:void(0);" class="icon" onmouseover="hamburger()">
+      <i class="fa fa-bars"></i>
+    </a>
     
   </div>
 
@@ -143,5 +143,15 @@
       </div>
     </div>
   </div>
+<script>
+  function hamburger() {
+      let x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+</script>
 </body>
 </html>
