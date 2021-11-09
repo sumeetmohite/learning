@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Dashboard</title>
 </head>
 <body>
   <div class="navbar" id="myNavbar">
@@ -21,8 +20,20 @@
     <a href="#">USERS</a>
     <a href="#">REPORTS</a>
     <a href="#">ADMIN</a>
-    <a href="#"><i class="fa fa-bell"></i></a>
-    <a href="#"><i class="fa fa-bullhorn"></i></a>
+    <div class="dropdown"><i class="fa fa-bell"></i>
+      <div class="dropdown-content">
+        <a href="#">Learn html</a>
+        <a href="#">Learn css</a>
+        <a href="#">Learn javascript</a>
+      </div>
+    </div>
+    <div class="dropdown"><i class="fa fa-bullhorn"></i>
+      <div class="dropdown-content">
+        <a href="#">Lunch break</a>
+        <a href="#">Tea break</a>
+        <a href="#">Dinner break</a>
+      </div>
+    </div>
     <a href="#">
       <img
         src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80"
@@ -30,10 +41,8 @@
     <a href="javascript:void(0);" class="icon" onmouseover="hamburger()">
       <i class="fa fa-bars"></i>
     </a>
-    
   </div>
 
-  
   <div id="page-content">
     <div id="options">
       <button class="option-btn">4 Courses</button>
@@ -143,15 +152,6 @@
       </div>
     </div>
   </div>
-<script>
-  function hamburger() {
-      let x = document.getElementById("myNavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-</script>
+<script src="dashboard.js"></script>
 </body>
 </html>
