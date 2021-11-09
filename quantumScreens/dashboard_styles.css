@@ -20,6 +20,7 @@ body {
   align-self: center;
   color: #38a877;
   display: inline-block;
+  cursor: pointer;
 }
 .dropdown-content {
   display: none;
