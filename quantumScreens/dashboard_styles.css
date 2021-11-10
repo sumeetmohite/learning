@@ -15,6 +15,35 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+}
+#links-container {
+  min-width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#links-responsive {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#links-responsive > a {
+  text-decoration: none;
+  color: #38a877;
+}
+#links-responsive > a:hover {
+  color: white;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .dropdown {
   align-self: center;
@@ -24,7 +53,7 @@ body {
 }
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -32,6 +61,8 @@ body {
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
+  animation-name: fadein;
+  animation-duration: 1s;
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +70,17 @@ body {
   text-decoration: none;
   color: black;
 }
+#hamburger-dropdown {
+  margin-left: 60px;
+  line-height: 2;
+}
+#hamburger-dropdown > a {
+  color: #38a877;
+}
+#hamburger-dropdown > a:hover {
+  background: #f3f3f3;
+}
+
 .title {
   text-decoration: none;
   color: white;
@@ -168,19 +210,6 @@ body {
     height: 200px;
     margin: 0.5rem;
   }
-  .links-container.responsive {
-    position: relative;
-  }
-  .links-container.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .links-container.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -214,27 +243,17 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar a:not(:first-child) {
-    display: none;
-  }
   .navbar a.icon {
     display: block;
-    top: 10;
+    top: 25px;
     position: absolute;
-    right: 0;
+    right: 10px;
+  }
+  #links-responsive {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
-  .navbar.responsive {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .navbar.responsive a {
-    display: block;
-    float: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {

@@ -14,33 +14,52 @@
 </head>
 <body>
   <div class="navbar" id="myNavbar">
-    <a href="#" class="title selector active" style="color:white"><i class="fa fa-lightbulb"></i> Quantum</a>
-    <a href="#">DASHBOARD</a>
-    <a href="#">CONTENT</a>
-    <a href="#">USERS</a>
-    <a href="#">REPORTS</a>
-    <a href="#">ADMIN</a>
-    <div class="dropdown"><i class="fa fa-bell"></i>
-      <div class="dropdown-content">
-        <a href="#">Learn html</a>
-        <a href="#">Learn css</a>
-        <a href="#">Learn javascript</a>
+    <div id="product-title">
+      <a href="#" class="title selector active" style="color:white"><i class="fa fa-lightbulb"></i> Quantum</a>
+    </div>
+    <div id="links-container">
+      <div id="links-responsive">
+        <a href="#">DASHBOARD</a>
+        <a href="#">CONTENT</a>
+        <a href="#">USERS</a>
+        <a href="#">REPORTS</a>
+        <a href="#">ADMIN</a>
+        <div class="dropdown"><i class="fa fa-bell"></i>
+          <div class="dropdown-content">
+            <a href="#">Learn html</a>
+            <a href="#">Learn css</a>
+            <a href="#">Learn javascript</a>
+          </div>
+        </div>
+        <div class="dropdown"><i class="fa fa-bullhorn"></i>
+          <div class="dropdown-content">
+            <a href="#">Lunch break</a>
+            <a href="#">Tea break</a>
+            <a href="#">Dinner break</a>
+          </div>
+        </div>
+        <a href="#">
+          <img
+            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80"
+            alt="user" height="25" style="border-radius:50% ; border:2px solid #38A877 ">
+        </a>
+      </div>
+
+      <div class="dropdown">
+        <a href="" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="dropdown-content" id="hamburger-dropdown">
+          <a href="#">DASHBOARD</a>
+          <a href="#">CONTENT</a>
+          <a href="#">USERS</a>
+          <a href="#">REPORTS</a>
+          <a href="#">ADMIN</a>
+          <!-- <a href="#"><i class="fa fa-bell"></i></a>
+          <a href="#"><i class="fa fa-bullhorn"></i></a> -->
+        </div>
       </div>
     </div>
-    <div class="dropdown"><i class="fa fa-bullhorn"></i>
-      <div class="dropdown-content">
-        <a href="#">Lunch break</a>
-        <a href="#">Tea break</a>
-        <a href="#">Dinner break</a>
-      </div>
-    </div>
-    <a href="#">
-      <img
-        src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80"
-        alt="user" height="25" style="border-radius:50% ; border:2px solid #38A877 "></a>
-    <a href="javascript:void(0);" class="icon" onmouseover="hamburger()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
 
   <div id="page-content">
