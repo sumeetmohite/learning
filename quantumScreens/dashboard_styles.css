@@ -16,26 +16,38 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+  margin: 0;
   align-items: center;
 }
 #links-container {
   min-width: 70%;
+  min-height: 60px;
+  margin: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 #links-responsive {
   width: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 #links-responsive > a {
+  border-style: solid;
+  border-width: 4px 0;
+  border-color: #202b37;
+
+  height: 52px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #38a877;
 }
 #links-responsive > a:hover {
   color: white;
+  border-bottom: 4px solid white;
 }
 @keyframes fadein {
   from {
