@@ -54,8 +54,9 @@ body {
 .dropdown-content {
   display: none;
   position: fixed;
+  margin-left: -150px;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -71,12 +72,17 @@ body {
   color: black;
 }
 #hamburger-dropdown {
-  margin-left: 60px;
+  right: 0;
+  top: 2rem;
   line-height: 2;
+  padding: 0;
 }
-#hamburger-dropdown > a {
+#hamburger-dropdown > a,
+#hamburger-dropdown > div {
+  margin: 6px 12px;
   color: #38a877;
 }
+
 #hamburger-dropdown > a:hover {
   background: #f3f3f3;
 }
@@ -112,8 +118,52 @@ body {
 .navbar .icon {
   display: none;
 }
-
+#announcement-dropdown {
+  min-width: 300px;
+  padding: 0;
+}
+.message-ctr {
+  color: #121212;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  line-height: 1.5;
+  margin: 0;
+}
+.message-ctr > h5,
+h4 {
+  font-weight: 500;
+}
+.media-timestamp {
+  display: flex;
+  color: grey;
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: space-between;
+}
+#alert-dropdown {
+  max-width: 300px;
+  padding: 0;
+}
+.timestamp > p {
+  color: grey;
+  font-size: 12px;
+  font-weight: 500;
+}
 .fa-bars {
+  color: #38a877;
+}
+#ham-content:hover {
+  background-color: #f3f3f3;
+}
+#ham-content > a {
+  text-decoration: none;
+  color: #38a877;
+}
+#content-list {
+  margin-left: 1rem;
+}
+#content-list > a {
+  text-decoration: none;
   color: #38a877;
 }
 

@@ -25,17 +25,57 @@
         <a href="#">REPORTS</a>
         <a href="#">ADMIN</a>
         <div class="dropdown"><i class="fa fa-bell"></i>
-          <div class="dropdown-content">
-            <a href="#">Learn html</a>
-            <a href="#">Learn css</a>
-            <a href="#">Learn javascript</a>
+          <div class="dropdown-content" id="alert-dropdown">
+            <div class="message-ctr">
+              <h4>License for introduction to Algebra has been assigned to your school</h4>
+              <div class="media-timestamp">
+                <p></p>
+                <p>15-Sep-2018 at 07:21pm</p>
+              </div>
+            </div>
+            <div class="message-ctr">
+              <h4>Lesson 3 practice Worksheet overdue for Amy Santiago</h4>
+              <h5><span style="color:grey">Course:</span> Advanced Mathematics</h5>
+              <div class="media-timestamp">
+                <p></p>
+                <p>15-Sep-2018 at 07:21pm</p>
+              </div>
+            </div>
+            <div class="message-ctr">
+              <h4>23 new students created</h4>
+              <div class="media-timestamp">
+                <p></p>
+                <p>15-Sep-2018 at 07:21pm</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="dropdown"><i class="fa fa-bullhorn"></i>
-          <div class="dropdown-content">
-            <a href="#">Lunch break</a>
-            <a href="#">Tea break</a>
-            <a href="#">Dinner break</a>
+          <div class="dropdown-content" id="announcement-dropdown">
+            <div class="message-ctr">
+              <h5><span style="color: grey">PA:</span> Wilson Kumar</h5>
+              <h4>No classes will be held on 21st Nov</h4>
+              <div class="media-timestamp">
+                <p>2 files are attached</p>
+                <p>15-Sep-2018 at 07:21pm</p>
+              </div>
+            </div>
+            <div class="message-ctr">
+              <h5><span style="color: grey">PA:</span> Samson White</h5>
+              <h4>Guest lecture on Geometry on 20th September</h4>
+              <div class="media-timestamp">
+                <p>2 files are attached</p>
+                <p>15-Sep-2018 at 07:21pm</p>
+              </div>
+            </div>
+            <div class="message-ctr">
+              <h5><span style="color: grey">PA:</span> Wilson Kumar</h5>
+              <h4>Additional course materials available on request</h4>
+              <div class="media-timestamp">
+                <p>2 files are attached</p>
+                <p>15-Sep-2018 at 07:21pm</p>
+              </div>
+            </div>
           </div>
         </div>
         <a href="#">
@@ -51,7 +91,9 @@
         </a>
         <div class="dropdown-content" id="hamburger-dropdown">
           <a href="#">DASHBOARD</a>
-          <a href="#">CONTENT</a>
+          <div id="ham-content"><a href="#">CONTENT</a>
+            <div id="content-list"><a href="#">COURSE CATALOG</a></div>
+          </div>
           <a href="#">USERS</a>
           <a href="#">REPORTS</a>
           <a href="#">ADMIN</a>
@@ -64,8 +106,8 @@
 
   <div id="page-content">
     <div id="options">
-      <button class="option-btn">4 Courses</button>
-      <button class="option-btn">4 Classes</button>
+      <button class="option-btn"><i class="fa fa-book" style="font-size:20px"></i><span style="font-size:18px">  4</span> Courses</button>
+      <button class="option-btn"><i class="fas fa-user-friends" style="font-size:20px"></i><span style="font-size:18px">  4</span> Classes</button>
     </div>
     <div id="courses">
       <div style="display:flex ; justify-content:space-between">
